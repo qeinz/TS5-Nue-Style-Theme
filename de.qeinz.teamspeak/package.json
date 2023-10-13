@@ -1,0 +1,38 @@
+{
+    "name": "qeinz's Theme",
+    "description": "qeinz's inspired custom TS5 Theme",
+    "version": "1.0.0",
+    "identifier": "de.qeinz.teamspeak",
+    "engines": {
+        "teamspeak": 1
+    },
+    "repository": {
+        "url": "https://github.com/qeinz/TS5_Nue_Theme",
+        "directory": "de.qeinz.teamspeak",
+        "type": "git"
+    },
+    "image": "qeinz.png",
+    "license": "CC BY-SA",
+    "author": {
+        "name": "qeinz",
+        "email": "info@qeinz.de",
+        "url": "https://www.youtube.com/@qeinzts",
+        "userTag": "qeinz@myteamspeak.com"
+    },
+    "content": {
+        "themes": [
+            {
+                "name": "Light Theme Nue",
+                "source": "lightNue.css",
+                "image": "lightNue.png",
+                "apiVersion": 1
+            },
+            {
+                "name": "Dark Theme Nue",
+                "source": "darkNue.css",
+                "image": "darkNue.png",
+                "apiVersion": 1
+            }
+        ]
+    }
+}
