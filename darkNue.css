@@ -920,6 +920,12 @@ path.tsv-icon-base-fill {
     font-style: italic !important;
 }
 
+/* status text others */
+.ts-contact-list .ts-list-root .tsv-item-content > .tsv-text-truncate {
+    color: var(--lightpastel) !important;
+    font-style: italic !important;
+}
+
 /* favorite star */
 .tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite {
     z-index: 10 !important;
