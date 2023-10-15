@@ -180,6 +180,13 @@ path.tsv-icon-base-fill {
     display: none !important;
 }
 
+/* dateiübertarung user */
+.tsv-server-info .ts-widget-container .ts-transfer-quota-outer {
+    border-radius: var(--tsv-border-radius) !important;
+    background: var(--tabs-colors) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
 .tsv-settings-categories .tsv-action-subtle {
     background: var(--pastoole) !important;
     box-shadow: var(--hard-shadow) !important;
