@@ -153,13 +153,7 @@ path.tsv-icon-base-fill {
 }
 
 .tsv-tabs-slim .tsv-bar-item:first-child {
-    font-size: 0px !important;
-
-}
-
-.tsv-settings-categories .tsv-tabs-slim::before {
     font-size: 20px !important;
-    content: "Settings" !important;
     text-shadow: var(--hard-shadow) !important;
     line-height: 1 !important;
     margin-bottom: 0px !important;
