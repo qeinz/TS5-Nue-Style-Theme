@@ -1557,7 +1557,9 @@ hr {
 }
 /* end of settings layout changes */
 
+
 /* settings theme picker background */
+/*
 .tsv-settings-theme-picker::before {
     content: '';
     position: absolute;
@@ -1581,6 +1583,7 @@ hr {
 .tsv-settings-theme-picker-item-title-selected {
     padding-right: 25px !important;
 }
+*/
 
 /* server style tree */
 .ts-widget .ts-widget-container > div {
