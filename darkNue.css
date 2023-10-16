@@ -824,6 +824,11 @@ path.tsv-icon-base-fill {
     color: var(--green) !important;
 }
 
+.ts-chat-container .ts-chat-input-container .ts-chat-referenced-event {
+    background: var(--pastoole) !important;
+    border-radius: var(--tsv-border-radius) !important;
+}
+
 .ts-chat-container .tsv-body .ts-currently-referencing .ts-chat-room-event-bubble {
     background: var(--green) !important;
 }
@@ -1562,28 +1567,12 @@ hr {
 }
 /* end of settings layout changes */
 
-/* settings theme picker background */
-.tsv-settings-theme-picker::before {
-    content: '';
-    position: absolute;
-    width: 90% !important;
-    height: 22% !important;
-    top: 65px !important;
-    background: var(--pastel) !important;
-    border-radius: var(--tsv-border-radius) !important;
-    box-shadow: var(--inset-shadow) !important;
-    z-index: 1;
+.tsv-settings-theme-picker .tsv-settings-theme-picker-item .selected{
+    border: var(--green) solid 2px !important;
 }
 
-.tsv-settings-theme-picker .tsv-settings-theme-picker-item {
-    margin-top: 25px;
-    height: 300px !important;
-    padding-right: 25px !important;
-    z-index: 2;
-}
-
-.tsv-settings-theme-picker-item-title-selected {
-    padding-right: 25px !important;
+.tsv-settings-theme-picker {
+    margin-bottom: -40px !important;
 }
 
 /* server style tree */
