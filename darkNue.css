@@ -1583,7 +1583,12 @@ hr {
 
 .tsv-body .ts-widget-container > .ts-widget-container > div:nth-child(2) .ts-card-caption,
 .tsv-body .ts-widget-container > .ts-widget-container > div:nth-child(2) .ts-card-subtitle {
-    padding-left: 15px !important;
+    padding-left: 10px !important;
+}
+
+.tsv-body .ts-widget-container > .ts-widget-container > div:nth-child(2) .ts-card-caption {
+    
+    color: var(--green) !important;
 }
 
 /* User tag widget background */
