@@ -35,11 +35,6 @@
     --ts-select-bg: var(--arctic) !important;
     
     --green: #00A86B !important;
-    --yellow: #e4e70a !important;
-    --pink: #e40b3a !important;
-    --purple: #912dee !important;
-    --red: #ff0000 !important;
-    --blue: #16bcfb !important;
     --white: #ffffff !important;
     --black: #000000 !important;
     --pastoole: #1e1e1f !important;
@@ -152,7 +147,7 @@ path.tsv-icon-base-fill {
     display: flex !important;
 }
 
-.tsv-tabs-slim .tsv-bar-item:first-child {
+.tsv-settings-categories > .tsv-bar > .tsv-bar-item-title {
     font-size: 20px !important;
     text-shadow: var(--hard-shadow) !important;
     line-height: 1 !important;
@@ -177,13 +172,6 @@ path.tsv-icon-base-fill {
 
 .tsv-sidebar-content.hasOverlay .resources-section:after {
     display: none !important;
-}
-
-/* dateiübertarung user */
-.tsv-server-info .ts-widget-container .ts-transfer-quota-outer {
-    border-radius: var(--tsv-border-radius) !important;
-    background: var(--tabs-colors) !important;
-    box-shadow: var(--hard-shadow) !important;
 }
 
 .tsv-settings-categories .tsv-action-subtle {
@@ -546,10 +534,6 @@ path.tsv-icon-base-fill {
     background: var(--pastel) !important;
 }
 
-.ts-servertree-sidebar-overlay {
-    display: none !important;    
-}
-
 /* chat input background */
 .tsv-activity-secondary .ts-chat-input-container, .tsv-activity-secondary .ts-chat-input-container-content,
 .tsv-activity-secondary .ts-chat-input-emoji-picker, .tsv-activity-secondary .ts-chat-input-emoji-picker .ts-chat-input-tab.active,
@@ -826,6 +810,15 @@ path.tsv-icon-base-fill {
     padding-top: 10px !important;
 }
 
+/* reply white fix */
+.ts-chat-container .tsv-body .ts-currently-referencing .ts-chat-room-event-bubble {
+    background: var(--green) !important;
+}
+
+.ts-chat-container .tsv-body .ts-currently-referencing .ts-chat-room-event-bubble::before {
+    border-right-color: var(--green) !important;
+}
+
 /* chat code block */
 .ts-activity-slideover-container .tsv-view .tsv-body .ts-chat-container .ts-chat-room-event-detailed .ts-chat-room-event-body .ts-chat-message-content code,
 .tsv-body .ts-chat-container .tsv-body .ts-chat-room-event-detailed .ts-chat-room-event-body .ts-chat-message-content code {
@@ -922,12 +915,6 @@ path.tsv-icon-base-fill {
 }
 
 .tsv-footer .tsv-bar .tsv-bar-item .tsv-item-content > .tsv-text-truncate {
-    color: var(--lightpastel) !important;
-    font-style: italic !important;
-}
-
-/* status text others */
-.ts-contact-list .ts-list-root .tsv-item-content > .tsv-text-truncate {
     color: var(--lightpastel) !important;
     font-style: italic !important;
 }
@@ -1556,14 +1543,12 @@ hr {
 }
 /* end of settings layout changes */
 
-
 /* settings theme picker background */
-/*
 .tsv-settings-theme-picker::before {
     content: '';
     position: absolute;
-    width: 1032px !important;
-    height: 350px !important;
+    width: 90% !important;
+    height: 22% !important;
     top: 65px !important;
     background: var(--pastel) !important;
     border-radius: var(--tsv-border-radius) !important;
@@ -1573,21 +1558,26 @@ hr {
 
 .tsv-settings-theme-picker .tsv-settings-theme-picker-item {
     margin-top: 25px;
-    height: 350px !important;
-    width: 450px !important;
-    padding-left: 25px !important;
+    height: 300px !important;
+    padding-right: 25px !important;
     z-index: 2;
 }
 
 .tsv-settings-theme-picker-item-title-selected {
     padding-right: 25px !important;
 }
-*/
 
 /* server style tree */
 .ts-widget .ts-widget-container > div {
     background: none !important;
     box-shadow: none !important;
+}
+
+/* User tag widget background */
+.tsv-server-info .ts-widget-container > .tsv-client-myts-info-fallback {
+    background: var(--pastoole) !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: var(--tsv-border-radius);
 }
 
 /* settings menu tabs repositioned */
