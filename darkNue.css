@@ -147,14 +147,8 @@ path.tsv-icon-base-fill {
     display: flex !important;
 }
 
-.tsv-tabs-slim .tsv-bar-item:first-child {
-    font-size: 0px !important;
-
-}
-
-.tsv-settings-categories .tsv-tabs-slim::before {
+.tsv-settings-categories > .tsv-bar > .tsv-bar-item-title {
     font-size: 20px !important;
-    content: "Settings" !important;
     text-shadow: var(--hard-shadow) !important;
     line-height: 1 !important;
     margin-bottom: 0px !important;
@@ -178,13 +172,6 @@ path.tsv-icon-base-fill {
 
 .tsv-sidebar-content.hasOverlay .resources-section:after {
     display: none !important;
-}
-
-/* dateiübertarung user */
-.tsv-server-info .ts-widget-container .ts-transfer-quota-outer {
-    border-radius: var(--tsv-border-radius) !important;
-    background: var(--tabs-colors) !important;
-    box-shadow: var(--hard-shadow) !important;
 }
 
 .tsv-settings-categories .tsv-action-subtle {
@@ -477,6 +464,13 @@ path.tsv-icon-base-fill {
     display: none !important;
 }
 
+/* dateiübertarung user */
+.tsv-server-info .ts-widget-container .ts-transfer-quota-outer {
+    border-radius: var(--tsv-border-radius) !important;
+    background: var(--tabs-colors) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
 /* right sidebar client info cards background */
 .ts-widget-container .tsv-server-info-grid .tsv-server-info-grid-item {
     background-color: var(--tabs-colors) !important;
@@ -545,10 +539,6 @@ path.tsv-icon-base-fill {
 .ts-chat-input-container {
     border: 1px solid var(--pastel) !important;
     background: var(--pastel) !important;
-}
-
-.ts-servertree-sidebar-overlay {
-    display: none !important;    
 }
 
 /* chat input background */
@@ -744,8 +734,10 @@ path.tsv-icon-base-fill {
     border-bottom: none !important;    
 }
 
-.tsv-body .tsv-resources-group:nth-child(1) .tsv-list > div:nth-child(2) .tsv-activity-group-list .tsv-text-truncate{
-
+.tsv-body .tsv-resources-group:nth-child(1) .tsv-list > div:not(:nth-child(1)) .tsv-activity-group-list li ul li.tsv-item-active-secondary:nth-child(1) .tsv-item-content > .tsv-text-truncate,
+.tsv-body .tsv-resources-group:nth-child(1) .tsv-list > div:not(:nth-child(1)) .tsv-activity-group-list > li.tsv-item-active-secondary .tsv-item-content > .tsv-text-truncate {
+    font-style: italic !important;
+    color: var(--lightpastel) !important;
 }
 
 .tsv-body .tsv-resources-group:nth-child(1) .tsv-activity-group-list li:has(ul.tsv-item-group) {
@@ -825,6 +817,24 @@ path.tsv-icon-base-fill {
 .ts-widget-container .ts-card .ts-option-row {
     justify-content: space-between !important;
     padding-top: 10px !important;
+}
+
+/* reply white fix */
+.ts-chat-container .ts-chat-input-container .ts-chat-referenced-event > .ts-chat-referenced-event-visible-normal {
+    color: var(--green) !important;
+}
+
+.ts-chat-container .ts-chat-input-container .ts-chat-referenced-event {
+    background: var(--pastoole) !important;
+    border-radius: var(--tsv-border-radius) !important;
+}
+
+.ts-chat-container .tsv-body .ts-currently-referencing .ts-chat-room-event-bubble {
+    background: var(--green) !important;
+}
+
+.ts-chat-container .tsv-body .ts-currently-referencing .ts-chat-room-event-bubble::before {
+    border-right-color: var(--green) !important;
 }
 
 /* chat code block */
@@ -927,12 +937,6 @@ path.tsv-icon-base-fill {
     font-style: italic !important;
 }
 
-/* status text others */
-.ts-contact-list .ts-list-root .tsv-item-content > .tsv-text-truncate {
-    color: var(--lightpastel) !important;
-    font-style: italic !important;
-}
-
 /* favorite star */
 .tsv-icon-contact-status-favorite, .tsv-icon-chat-room-status-favorite {
     z-index: 10 !important;
@@ -1024,6 +1028,7 @@ path.tsv-icon-base-fill {
     background: var(--voicemenu) !important;
     z-index: 10 !important;
     width: 88% !important;
+    border-bottom: var(--green) 2px solid !important;
 }
 
 /* rework active talking users menu background */
@@ -1106,6 +1111,11 @@ path.tsv-icon-base-fill {
 .tsv-item-active-indicator {
     border-right-color: var(--tsv-icon-tint) !important;
     right: 2px !important;
+}
+
+.ts-contact-list .ts-list-root .tsv-item-content > .tsv-text-truncate {
+    color: var(--lightpastel) !important;
+    font-style: italic !important;
 }
 
 /* border top the status name */
@@ -1557,38 +1567,30 @@ hr {
 }
 /* end of settings layout changes */
 
-
-/* settings theme picker background */
-/*
-.tsv-settings-theme-picker::before {
-    content: '';
-    position: absolute;
-    width: 1032px !important;
-    height: 350px !important;
-    top: 65px !important;
-    background: var(--pastel) !important;
-    border-radius: var(--tsv-border-radius) !important;
-    box-shadow: var(--inset-shadow) !important;
-    z-index: 1;
+.tsv-settings-theme-picker .tsv-settings-theme-picker-item .selected{
+    border: var(--green) solid 2px !important;
 }
 
-.tsv-settings-theme-picker .tsv-settings-theme-picker-item {
-    margin-top: 25px;
-    height: 350px !important;
-    width: 450px !important;
-    padding-left: 25px !important;
-    z-index: 2;
+.tsv-settings-theme-picker {
+    margin-bottom: -40px !important;
 }
-
-.tsv-settings-theme-picker-item-title-selected {
-    padding-right: 25px !important;
-}
-*/
 
 /* server style tree */
-.ts-widget .ts-widget-container > div {
+.tsv-body .ts-widget-container > .ts-widget-container > div {
     background: none !important;
     box-shadow: none !important;
+}
+
+.tsv-body .ts-widget-container > .ts-widget-container > div:nth-child(2) .ts-card-caption,
+.tsv-body .ts-widget-container > .ts-widget-container > div:nth-child(2) .ts-card-subtitle {
+    padding-left: 15px !important;
+}
+
+/* User tag widget background */
+.tsv-server-info .ts-widget-container > .tsv-client-myts-info-fallback {
+    background: var(--pastoole) !important;
+    box-shadow: var(--hard-shadow) !important;
+    border-radius: var(--tsv-border-radius);
 }
 
 /* settings menu tabs repositioned */
