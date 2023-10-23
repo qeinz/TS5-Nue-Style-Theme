@@ -335,6 +335,10 @@ path.tsv-icon-base-fill {
     background: var(--smallboxes) !important;
 }
 
+#popper_22u9wkfm_3bxph6 {
+    background: var(--pastoole) !important;
+}
+
 /* top tool bar header transparent */
 .tsv-header-bar-below-tools:before {
     opacity: 0 !important;
@@ -968,6 +972,11 @@ path.tsv-icon-base-fill {
     fill: var(--tsv-tint) !important;
 }
 
+/* searchbar navigation list background */
+.tsv-location-navigator {
+    background: var(--pastoole) !important;
+}
+
 /* searchbar background */
 .tsv-location-bar, .tsv-search-bar {
     background: var(--tabs-colors) !important;
@@ -1297,11 +1306,20 @@ path.tsv-icon-base-fill {
     border-right: 6px solid var(--green) !important;
 }
 
+/* turn notification background dark for everything except poke */
+.ts-notifications-container .notification-item:has(.ts-notification-body)::before {
+    background: var(--pastoole) !important;
+}
+
+.ts-notification-poke-widget {
+    border: var(--green) 1px solid !important;
+}
+
 /* groups chat notification */
 .ts-notification {
     box-shadow: var(--hard-shadow) !important;
     margin-top: 5px !important;
-    background: var(--pastel) !important;
+    background: var(--pastoole) !important;
     border: 1px solid transparent !important;
 }
 
@@ -1359,6 +1377,14 @@ path.tsv-icon-base-fill {
 .tsv-background-canvas.small {
     display: var(--defaultbg) !important;
     background: radial-gradient(circle, rgba(44,255,178,1) 0%, rgba(55,88,187,1) 100%) !important;
+}
+
+/* background for each item in bookmarks of identities */
+.ts-identities-root .ts-security-level-header > .ts-identity-bookmark {
+    background: var(--pastoole) !important;
+    box-shadow: var(--hard-shadow) !important;
+    padding: 5px !important;
+    padding-right: 9px !important;
 }
 
 /* settings background colored */
@@ -1428,6 +1454,15 @@ hr {
     background: var(--arctic) !important;
 }
 
+.ts-audio-settings .tsv-readability > .ts-widget-container > .ts-card {
+    background: var(--pastoole) !important;
+}
+
+.ts-audio-settings .ts-divider-line {
+    background: var(--pastel) !important;
+    box-shadow: none !important;
+}
+
 /* settings card backgrounds */
 .ts-account-settings-view .ts-card, .ts-appearance-settings .ts-card, .ts-audio-settings .ts-card, .ts-keybinds-settings .ts-card, .ts-notifications-root .ts-card, .ts-whisper-settings .ts-card, .ts-identities-root .ts-card, .ts-apps-settings .ts-card, .ts-privacy-settings-view .ts-card, .ts-about-settings .ts-card {
     background-color: var(--settings-card) !important;
@@ -1435,6 +1470,29 @@ hr {
     box-shadow: var(--hard-shadow) !important;
 }
 
+/* add as contact / start private chat background */
+.tsv-server-info .tsv-client-info-contact-management {
+    background: var(--pastoole) !important;
+    box-shadow: var(--hard-shadow) !important;
+}
+
+/* editing Channel overview background changes */
+.tsv-server-info .ts-widget-container > .ts-card:has(.ts-info-edit-matrix-debug) {
+    background: var(--pastoole) !important;
+}
+
+.tsv-server-info .ts-widget-container > .ts-card .ts-info-edit-matrix-debug .entry:nth-child(3),
+.tsv-server-info .ts-widget-container > .ts-card .ts-info-edit-matrix-debug .entry:nth-child(4) {
+    padding-left: 5px !important;
+}
+
+.tsv-server-info .ts-widget-container > .ts-card:has(.ts-textarea-inner) {
+    background: var(--pastoole) !important;
+}
+
+.tsv-server-info .ts-widget-container > .ts-card:has(.tsv-server-info-settings) .ts-accordion-item > .ts-card {
+    background: var(--pastoole) !important;
+}
 
 /* setting profile background */
 .tsv-view-banner .tsv-view-background {
